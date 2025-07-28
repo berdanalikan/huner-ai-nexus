@@ -140,14 +140,16 @@ const Home = () => {
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <HeroButton 
-              variant="secondary" 
-              size="lg"
-              className="w-full"
-              icon={<Mail className="w-5 h-5" />}
-            >
-              Öneri & Geri Bildirim Formu
-            </HeroButton>
+            <Link to="/feedback">
+              <HeroButton 
+                variant="secondary" 
+                size="lg"
+                className="w-full"
+                icon={<Mail className="w-5 h-5" />}
+              >
+                Öneri & Geri Bildirim Formu
+              </HeroButton>
+            </Link>
             
             <Link to="/chat">
               <HeroButton 
